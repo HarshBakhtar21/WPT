@@ -1,0 +1,29 @@
+p{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    font-size: medium;
+    font-style: oblique;
+
+}
+p.moderate{
+    font-display: auto;
+    background-color: chocolate;
+    flex: content;
+    border: 0cqmin;
+    font-style: initial;
+}
+p.gaudy{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: fixed;
+    background-color: brown;
+    border: 0cqmin;
+    font-style: inherit;
+}
+#id1{
+    font-display: block;
+    font-weight: 400;
+    color: tomato;
+    border: 0cqb;
+    font-style: bold;
+
+}
