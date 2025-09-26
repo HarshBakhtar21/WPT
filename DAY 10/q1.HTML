@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+            
+        </script>
+    </head>
+    <body>
+        <div id="d1"><h1>this is using jquery</h1></div>
+        <button>click me</button>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#d1").load("demo.txt");
+            })
+        })
+    </script>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        Enter input <input type="text"  required  id="t1" maxlength="50" minlength="2"> 
+        <p id="para1"></p>
+        <button onclick="validate()">Display</button>
+    </body>
+    <script>
+        function validate()
+        {
+            let element = document.getElementById("t1");
+            console.log(element.checkValidity());
+            if(element.checkValidity()){
+                document.getElementById("para1").innerText = document.getElementById("t1").value;
+            }
+            else
+            {
+                document.getElementById("para1").innerText=element.ValidationMessage
+            }
+        }
+    </script>
+</html>  

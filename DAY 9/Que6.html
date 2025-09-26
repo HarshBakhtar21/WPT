@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .important{
+                font-style: oblique ;
+                font-size: xx-large;
+
+            }
+            .blue{
+                color: blue;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h2>Hi</h2>
+        <p>This is paragraph</p>
+        <div>my name is kabir</div>
+        <button id="b1">.click me</button>
+        <button id="b2">.click me</button>
+        <button id="b3">.click me</button>
+    </body>
+    <script>
+        $("#b1").click(function(){
+            $("h1,h2,p").addClass("important");
+            $("div").addClass("blue");
+        })
+        $("#b2").click(function(){
+            $("h1,h2,p").removeClass("important");
+            $("div").add("blue");
+        })
+        $("#b3").click(function(){
+            $("h1,h2,p").toggleClass("important");
+            $("div").toggleClass("blue");
+        })
+        
+        
+
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            hello
+        </title>
+        <style>
+            .italicText{
+                font-style: italic;
+            }
+            .textStyle{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="para1"></p>
+        <p id="para 2"></p>
+        <p id=" para 3"></p>
+
+    </body>
+    <script>
+        $(document).ready(function(){
+            let text = "Hello";
+            $("#para1").text(text);
+            $('#para2').addClass("italicText").text(text);
+            $('#para3').addClass("textStyle").text(text);
+        })
+    </script>
+</html>

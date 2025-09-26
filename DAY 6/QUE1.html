@@ -1,0 +1,55 @@
+<html>
+<body>
+
+<div id="d1" style="background-color: blueviolet;">
+    
+        
+    <h1>Employee Details</h1>
+    <label for="fname">Enter First Name</label>
+    <input type="text" name="fname" id="fname"><br />
+    <label for="Lname">Enter Last Name</label>
+    <input type="text" name="lname" id="lname"><br />
+    <label for="eAdd">Enter Email id</label>
+    <input type="text" name="eadd" id="eadd"><br />
+
+ <button onclick="validate()">Show Data</button>
+    
+</div>
+   
+<div id="d2" style="background-color: burlywood;">
+       
+    <table id="t1">
+         <tr>
+                <th>FirstName</th>
+                <th>LastName</th> 
+                <th>Email Id</th>
+         </tr>
+     </table>
+</div>
+
+</body>
+
+<script>
+
+    function validate()
+    {
+        let fName = document.getElementById("fname").value.trim();
+        let lName = document.getElementById("lname").value.trim();
+        let eadd = document.getElementById("eadd").value.trim();
+
+        
+    
+    let table = document.getElementById("t1");
+    let newRow = table.insertRow()
+
+    newRow.insertCell(0).innerHTML = fName;
+    newRow.insertCell(1).innerHTML = lName;
+    newRow.insertCell(2).innerHTML = eadd;
+
+    document.getElementById("fname").value = "";
+    document.getElementById("lname").value = "";
+    document.getElementById("eadd").value = "";
+    }
+
+</script>
+</html>

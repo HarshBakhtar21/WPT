@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <p id="para1"></p>
+        <p id="para2"></p>
+    </body>
+    <script>
+        document.getElementById("para1").innerHTML = "DATA";
+        try {
+            data = "content";
+            let data;
+            document.getElementById("para1").innerHTML = data;
+
+            
+        } catch (error) {
+            document.getElementById("para1").innerHTML="something went wrong";
+            
+        }
+        finally{
+            document.getElementById("para2").innerHTML = "Always Runs";
+        }
+    </script>
+</html>

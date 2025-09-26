@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>AJAX Text File Example</title>
+<script>
+    function loadTextFile() {
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "data.txt", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById("output").innerText = xhr.responseText;
+        }
+      };
+      xhr.send();
+    }
+</script>
+</head>
+<body>
+  <h2>Load Text File Using AJAX</h2>
+  <button onclick="loadTextFile()">Load Text</button>
+  <div id="output" style="margin-top:20px; white-space:pre-wrap;"></div>
+</body>
+</html>

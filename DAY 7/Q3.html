@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="d1" style="background-color: aqua;">
+        <label for="firstName">Enter First Name</label>
+        <input type="text" id="fname"></br>
+        <label for="LastName">Enter Last Name</label>
+        <input type="text" id="lname"></br>
+        <label for="Age">Enter Age</label>
+        <input type="text" id="age"></br>
+        <button id="b1" type="button" onclick="call()">Submit</button>
+        </div>
+    </body>
+    <script>
+        function call(){
+        let fName = document.getElementById("fname").value;
+        let lName = document.getElementById("lname");
+        let a = document.getElementById("age");
+
+        const  data = {firstName : fName , lastName : lName , age : a}
+
+        console.log(data);
+
+        }
+    </script>
+</html>
